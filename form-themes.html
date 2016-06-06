@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8">
+		<title>Temas para Botão</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.1.min.js"></script>   
+    <link rel="stylesheet"  href="css/jquery.mobile-1.4.1.min.css" /> 
+	</head> 
+<body> 
+
+
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Topo</h1>
+        </div>
+		<div data-role="content">
+
+			<div class="ui-body ui-body-b">
+                
+                <div data-role="fieldcontain">
+                 <label for="name-a">Text Input:</label>
+                 <input type="text" name="name" id="name-a" value=""  />
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="switch-a">Flip switch:</label>
+                    <select name="switch-a" id="switch-a" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select> 
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="slider-a">Slider:</label>
+                    <input type="range" name="slider" id="slider-a" value="0" min="0" max="100"  />
+                </div>
+                
+                
+                <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Font styling:</legend>
+                    <input type="checkbox" name="checkbox-6a" id="checkbox-6a" class="custom" />
+                    <label for="checkbox-6a">b</label>
+        
+                    <input type="checkbox" name="checkbox-7a" id="checkbox-7a" class="custom" />
+                    <label for="checkbox-7a"><em>i</em></label>
+        
+                    <input type="checkbox" name="checkbox-8a" id="checkbox-8a" class="custom" />
+                    <label for="checkbox-8a">u</label>    
+                </fieldset>
+                </div>
+            
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Choose a pet:</legend>
+                            <input type="radio" name="radio-choice-1" id="radio-choice-1a" value="choice-1" />
+                            <label for="radio-choice-1a">Cat</label>
+        
+                            <input type="radio" name="radio-choice-1" id="radio-choice-2a" value="choice-2"  />
+                            <label for="radio-choice-2a">Dog</label>
+        
+                            <input type="radio" name="radio-choice-1" id="radio-choice-3a" value="choice-3"  />
+                            <label for="radio-choice-3a">Hamster</label>
+        
+                            <input type="radio" name="radio-choice-1" id="radio-choice-4a" value="choice-4"  />
+                            <label for="radio-choice-4a">Lizard</label>
+                    </fieldset>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="select-choice-a" class="select">Choose shipping method:</label>
+                    <select name="select-choice-a" id="select-choice-a">
+                        <option value="standard">Standard: 7 day</option>
+                        <option value="rush">Rush: 3 days</option>
+                        <option value="express">Express: next day</option>
+                        <option value="overnight">Overnight</option>
+                    </select>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+

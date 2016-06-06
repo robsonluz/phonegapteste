@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="appSoma">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.1.min.js"></script>   
+    <link rel="stylesheet"  href="css/jquery.mobile-1.4.1.min.css" /> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="js/app-soma.js"></script>           
+</head>
+<body>
+	<div data-role="page" ng-controller="MainController as mainController">
+        <div data-role="header">
+        	<h1>Topo</h1>
+        </div>
+        <div data-role="content">
+        
+        <div>Resultado: {{mainController.resultado}}</div>
+
+		<input type="text" ng-model="mainController.numero1" placeholder="Número 1"/>
+        <input type="text" ng-model="mainController.numero2"  placeholder="Número 2"/>
+		
+		<button data-theme="b" data-role="button"
+            ng-click="mainController.somar()"
+            >
+            Somar
+        </button>
+          
+        </div>
+        <div data-role="footer">
+        	<h4>Rodapé</h4>
+        </div>       
+    </div>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+

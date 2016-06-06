@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.1.min.js"></script>   
+    <link rel="stylesheet"  href="css/jquery.mobile-1.4.1.min.css" /> 
+
+</head>
+<body>
+	<div data-role="page">
+        <div data-role="header">
+        	<h1>Topo</h1>
+        </div>
+        <div data-role="content">
+        
+	        <input type="text" id="txtNome" value="" data-theme="d"/>
+        
+			<button id="cmdTeste" data-theme="b" data-inline="true">Teste</button>
+          
+        </div>
+        <div data-role="footer">
+        	<h4>Rodapé</h4>
+        </div>
+		<script>
+            $('#cmdTeste').bind( "click", function() {
+				//Alterando o texto do input txtNome
+				$("#txtNome").val("Robson");
+            });
+        </script>            
+    </div>
+</body>
+</html>

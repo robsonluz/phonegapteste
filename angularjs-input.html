@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="appInput">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista</title>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.1.min.js"></script>   
+    <link rel="stylesheet"  href="css/jquery.mobile-1.4.1.min.css" /> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="js/app-input.js"></script>       
+
+</head>
+<body>
+	<div data-role="page" ng-controller="MainController as mainController">
+        <div data-role="header">
+        	<h1>Caixa de Texto</h1>
+        </div>
+        <div data-role="content">
+        
+            <input type="text" ng-model="mainController.nome" data-theme="d"/>
+
+			<button 
+                data-role="button" 
+                data-theme="b"
+                ng-click="mainController.mostrarMensagem()"
+            >
+                Teste
+            </button>
+
+          
+        </div>
+        <div data-role="footer">
+        	<h4>Rodapé</h4>
+        </div>           
+    </div>
+</body>
+</html>

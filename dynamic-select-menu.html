@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<meta charset="utf-8">
+	<title>Forms</title> 
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.1.min.js"></script>   
+    <link rel="stylesheet"  href="css/jquery.mobile-1.4.1.min.css" /> 
+</head> 
+<body> 
+
+<div data-role="page" data-theme="b">
+	<div data-role="header">
+		<h1>Select Menu</h1>
+	</div>
+
+	<div data-role="content">
+	  <form id="test" id="test" action="#" method="post">	
+		  <a href="#" id="create-select1" data-role="button">Criar select</a>
+
+	</div>
+	<script type="text/javascript">
+		$( "#create-select1" ).bind( "click", function() {
+			$( '<select name="select1" id="select1" data-theme="e"><option value="ação">Ação</option><option value="comédia">Comédia</option></select>' )
+				.insertAfter( "#create-select1" )
+				.selectmenu();
+		});
+	</script>
+</div>
+
+</body>
+</html>
+

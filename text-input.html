@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<meta charset="utf-8">
+	<title>Forms</title> 
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0;">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.mobile-1.4.1.min.js"></script>   
+    <link rel="stylesheet"  href="css/jquery.mobile-1.4.1.min.css" />  
+
+</head> 
+<body> 
+
+<div data-role="page" data-theme="a">
+	<div data-role="header">
+		<h1>Caixas de Textos</h1>
+	</div>
+
+	<div data-role="content">
+	  <form id="test" action="#" method="post">
+	  	<p style="margin-bottom:8px;">
+    	<input type="search" name="search" id="search" value="" placeholder="Busca"  />
+		</p>
+		<p>	
+	    <label for="text">Text:</label>
+	    <input type="text" name="text" id="text" value="" placeholder="Texto" />
+	    </p>
+		<p>   
+		<label for="number">Number:</label>
+        <input type="number" name="number" id="number" value="" placeholder="Número"  />
+		</p> 
+		<p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" value="" placeholder="Email"  />
+		</p> 
+		<p> 
+        <label for="url">Url:</label>
+        <input type="url" name="url" id="url" value="" placeholder="URL"  />	
+		</p>
+		<p>
+        <label for="tel">Tel:</label>
+        <input type="tel" name="tel" id="tel" value="" placeholder="Telefone"  />
+		</p>
+
+		<p>				 
+		<label for="textarea">Textarea:</label>
+		<textarea cols="40" rows="8" name="textarea" id="textarea" placeholder="Textarea" ></textarea>	
+		</p>			
+	  </form>	
+	</div>
+</div>
+
+</body>
+</html>
+
